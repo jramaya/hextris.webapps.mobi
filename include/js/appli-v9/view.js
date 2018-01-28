@@ -183,7 +183,7 @@ function showText(text)
         if (settings.platform == 'mobile')
             restartText = 'Touch the screen to start a new game';
         else
-            restartText = 'Touch <i class="fa fa-play"></i> to resume the game';
+            restartText = 'Press enter';
 
 
         messages['gameover'] += "</table><br><div class='unselectable centeredSubHeader' id = 'tapToRestart'>" + restartText + "</div>";
