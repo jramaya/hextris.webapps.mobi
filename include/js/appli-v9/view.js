@@ -154,9 +154,9 @@ function toggleClass(element, active)
 function showText(text) 
 {
     var messages = {
-        'paused': "<div class='centeredHeader unselectable'>Pause</div><br><div class='unselectable centeredSubHeader'>Appuyez sur p pour reprendre la partie</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'></div>",
+        'paused': "<div class='centeredHeader unselectable'>Pause</div><br><div class='unselectable centeredSubHeader'>Touch <i class='fa fa-play'></i> to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'></div>",
         'pausedAndroid': "<div class='centeredHeader unselectable'>Pause</div><br><div class='unselectable centeredSubHeader'>Touch <i class='fa fa-play'></i> to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'></div>",
-        'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Appuyez sur enter démarrer une partie</div>",
+        'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Touch <i class='fa fa-play'></i> to resume</div>",
         'gameover': "<div class='centeredHeader unselectable'> Game Over : " + score + " pts</div><br><div style='font-size:24px;' class='centeredHeader unselectable'> High Scores:</div><table class='tg' style='margin:0px auto'> "
     };
 
@@ -181,9 +181,9 @@ function showText(text)
 
         var restartText;
         if (settings.platform == 'mobile')
-            restartText = 'Touch for start a new game';
+            restartText = 'Touch the screen to start a new game';
         else
-            restartText = 'Touch to resume the game';
+            restartText = 'Touch <i class="fa fa-play"></i> to resume the game';
 
 
         messages['gameover'] += "</table><br><div class='unselectable centeredSubHeader' id = 'tapToRestart'>" + restartText + "</div>";
