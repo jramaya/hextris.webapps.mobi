@@ -170,7 +170,7 @@ function handleClickTap(x,y)
 {
     if (x < 120 && y < 50 && $('.helpText').is(':visible')) 
     {
-        showHelp();
+        facebookShare();
         return;
     }
 

@@ -362,7 +362,7 @@ function handleTapBefore(e)
 
     if (x < 120 && y < 50 && $('.helpText').is(':visible')) 
     {
-        showHelp();
+        facebookShare();
         return;
     }
 }
@@ -375,7 +375,7 @@ function handleClickBefore(e)
 
     if (x < 120 && y < 50 && $('.helpText').is(':visible')) 
     {
-        showHelp();
+        facebookShare();
         return;
     }
 }
