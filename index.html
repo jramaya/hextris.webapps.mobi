@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <title>Hextris</title>
+		<meta name="apple-itunes-app" content="app-id=903769553"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta property="og:url" content="http://hextris.github.io/hextris/"/>
+		<meta property="og:site_name" content="Hextris"/>
+		<meta property="og:title" content="Hextris"/>
+		<meta property="og:description" content="An addictive puzzle game inspired by Tetris."/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:author" content="https://www.facebook.com/hextris"/>
+		<meta property="og:image" content="http://hextris.github.io/hextris/images/facebook-opengraph.png"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="630"/>
+		<meta property="twitter:card" content="summary"/>
+		<meta property="twitter:site" content="@hextris"/>
+		<meta property="twitter:site:id" content="2742209678"/>
+		<meta property="twitter:creator" content="@hextris"/>
+		<meta property="twitter:creator:id" content="2742209678"/>
+		<meta property="twitter:domain" content="http://hextris.github.io"/>
+		<meta property="twitter:title" content="Hextris"/>
+		<meta property="twitter:description" content="An addictive puzzle game inspired by Tetris."/>
+		<meta property="twitter:image:src" content="http://hextris.github.io/hextris/images/twitter-opengraph.png"/>
+		<meta property="twitter:image:width" content="512"/>
+		<meta property="twitter:image:height" content="512"/>
+		<meta property="twitter:app:id:iphone" content="id903769553">
+		<meta property="twitter:app:id:ipad" content="id903769553">
+		<meta property="twitter:app:id:googleplay" content="com.hextris.hextris">
+		<meta property="twitter:app:country" content="us">
+		<meta property="twitter:app:url:iphone" content="itunes.apple.com/us/app/id903769553?mt=8">
+		<meta property="twitter:app:url:ipad" content="itunes.apple.com/us/app/id903769553?mt=8">
+		<meta property="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.hextris.hextris">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link rel="manifest" href="/manifest.json">
+    
+    <link rel="stylesheet" type="text/css" href="include/css/site.css"/> 
+    <link rel="stylesheet" type="text/css" href="include/css/style.css">
+    <link rel="stylesheet" href="include/css/fa/css/font-awesome.min.css">
+
+<script type = 'text/javascript' src="include/js/library/hammer.min.js"></script>
+<script type = 'text/javascript' src="include/js/library/jsonfn.min.js"></script>
+<script type = 'text/javascript' src="include/js/library/keypress.min.js"></script>
+<script type = 'text/javascript' src="include/js/library/jquery.js"></script>
+
+<script type = 'text/javascript' src="include/js/initialization.js"></script>
+
+<script type = 'text/javascript' src="include/js/appli-v9/save-state.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/view.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/wavegen.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/math.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/Block.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/Hex.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/Text.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/comboTimer.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/checking.js"></script>
+<script type = 'text/javascript' src='include/js/appli-v9/update.js'></script>
+<script type = 'text/javascript' src='include/js/appli-v9/render.js'></script>
+<script type = 'text/javascript' src="include/js/appli-v9/input.js"></script>
+<script type = 'text/javascript' src="include/js/appli-v9/main.js"></script>
+
+  </head> 
+ 
+  <body>
+ 
+        <canvas id="canvas"></canvas>
+
+        <div id='devtools' style='z-index:3;display:none;position:absolute;left:50%;width:400px;height:400px;top:50%;margin-top:-200px;margin-left:-200px;'>
+
+          <h2 id = 'clickToExit' style = 'background-color:#fff;color:#000'>Click to exit</h2>
+          <textarea id ='devtoolsText' style = 'height:300px;width:400px;'></textarea>
+        </div>
+        
+        <div class="faded overlay"></div>
+
+        <div id='startBtn' style='position:absolute;left:40%;top:38%;height:25%;width:25%;z-index:99999999;cursor:pointer;'></div>
+       
+        <div id="helpScreen" class = 'unselectable'>
+          <h1 class = 'instructions_body'>Instructions</h1>
+          <p class = 'instructions_body' id = 'inst_main_body'></p>
+        </div>
+       
+        <div id="openSideBar" class = 'helpText'><i class="fa fa-info-circle fa-lg"></i> <i class="fa fa-arrow-left"><b>  Help</b></i></div>
+       
+        <div class="faded overlay"></div>
+
+        <div id = 'pauseBtn'><div id = 'pauseBtnInner'><i class="fa fa-pause fa-2x"></i></div></div>
+        <div id = 'restartBtn'><div id = 'restartBtnInner'><i class="fa fa-refresh fa-2x"></i></div></div>
+
+  </body> 
+</html>
