@@ -71,13 +71,6 @@ function addKeyListeners()
     });
 
     keypress.register_combo({
-        keys: "q",
-        on_keydown: function() {
-            if (devMode) toggleDevTools();
-        }
-    });
-
-    keypress.register_combo({
         keys: "enter",
         on_keydown: function() {
             if (gameState==2 || gameState==1 || importing == 1) {
