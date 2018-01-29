@@ -48,14 +48,6 @@ function scaleCanvas()
 }
 
 
-
-function toggleDevTools() 
-{
-    $('#devtools').toggle();
-}
-
-
-
 function resumeGame() 
 {
     gameState = 1;
@@ -209,15 +201,6 @@ function addNewBlock(blocklane, color, iter, distFromHex, settled)
 
     blocks.push(new Block(blocklane, color, iter, distFromHex, settled));
 }
-
-
-
-function exportHistory() 
-{
-    $('#devtoolsText').html(JSON.stringify(history));
-    toggleDevTools();
-}
-
 
 function setStartScreen() 
 {

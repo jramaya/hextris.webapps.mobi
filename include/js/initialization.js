@@ -99,9 +99,6 @@ function initialize(a)
         };
     })();
 
-    $('#clickToExit').bind('click', toggleDevTools);
-    window.settings;
-
     if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         settings = {
             os: "other",
@@ -139,7 +136,7 @@ function initialize(a)
             comboTime: 240
         };
 
-        $("#inst_main_body").html("Le but de ce jeu Hextris est d'empêcher les blocs de quitter la zone grise centrale<br><br>" + (settings.platform != 'mobile' ? 'Appuyez sur les flèches directionnelles gauche et droite' : 'tapez sur les côtés gauche et droite de l\'écran') + "  pour faire pivoter l\'hexagone central<br><br>Supprimez des blocs et gagnez des points en positionnant 3 blocs de la même couleur côte à côte<br><br>Durée reestante avant que la possibilité de combo disparaisse, indiquée par <span style='color:#f1c40f;'>une</span> <span style='color:#e74c3c'>ligne</span> <span style='color:#3498db'>de couleur</span> <span style='color:#2ecc71'>à</span> l'extérieure de l'hexagone gris<br><br> " + (settings.platform == 'mobile' ? 'Toggle speeding up the game by tapping the inner hexagon' : "Speed up the game 2x by holding the down arrow"));
+        //$("#inst_main_body").html("Le but de ce jeu Hextris est d'empêcher les blocs de quitter la zone grise centrale<br><br>" + (settings.platform != 'mobile' ? 'Appuyez sur les flèches directionnelles gauche et droite' : 'tapez sur les côtés gauche et droite de l\'écran') + "  pour faire pivoter l\'hexagone central<br><br>Supprimez des blocs et gagnez des points en positionnant 3 blocs de la même couleur côte à côte<br><br>Durée reestante avant que la possibilité de combo disparaisse, indiquée par <span style='color:#f1c40f;'>une</span> <span style='color:#e74c3c'>ligne</span> <span style='color:#3498db'>de couleur</span> <span style='color:#2ecc71'>à</span> l'extérieure de l'hexagone gris<br><br> " + (settings.platform == 'mobile' ? 'Toggle speeding up the game by tapping the inner hexagon' : "Speed up the game 2x by holding the down arrow"));
     }
     if(/Android/i.test(navigator.userAgent)) {
         settings.os = "android";
