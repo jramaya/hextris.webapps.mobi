@@ -15,6 +15,7 @@ $(document).ready(function()
 {
     initialize();
     $('#bottombar').hide();// permet de lancer le jeu
+    startBtnHandler();
 });
 
 
