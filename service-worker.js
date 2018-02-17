@@ -1,10 +1,10 @@
 // Set a name for the current cache
-var cacheName = 'v1'; 
+var cacheName = 'v5'; 
 
 // Default files to always cache
 var cacheFiles = [
 	'./',
-	'./index.html?launcher=true',
+	'./index.html',
 	'./launcher-icon-1x.png',
 	'./launcher-icon-2x.png',
 	'./launcher-icon-4x.png',
