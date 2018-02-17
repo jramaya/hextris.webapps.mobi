@@ -115,7 +115,7 @@ function initialize(a)
             blockHeight: 20,
             rows: 7,
             speedModifier: 0.73,
-            creationSpeedModifier: 0.73,
+            creationSpeedModifier: 0.2,
             comboTime: 240
         };
     } else {
@@ -133,7 +133,7 @@ function initialize(a)
             blockHeight: 15,
             rows: 8,
             speedModifier: 0.65,
-            creationSpeedModifier: 0.65,
+            creationSpeedModifier: 0.2,
             comboTime: 240
         };
 
