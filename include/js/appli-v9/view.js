@@ -154,8 +154,8 @@ function toggleClass(element, active)
 function showText(text) 
 {
     var messages = {
-        'paused': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-30px;'><a href='https://dubaibarbershop.com/'><img src='images/barbershop.png'/></a></div>",
-        'pausedAndroid': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-30px;'><a href='https://dubaibarbershop.com/'><img src='images/barbershop.png'/></a></div>",
+        'paused': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-100px;'><a href='https://dubaibarbershop.com/'><img src='images/barbershop.png'/></a></div>",
+        'pausedAndroid': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-100px;'><a href='https://dubaibarbershop.com/'><img src='images/barbershop.png'/></a></div>",
         'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Presiona <i class='fa fa-play'></i> para continuar</div>",
         'gameover': "<div class='centeredHeader unselectable'><a href='https://dubaibarbershop.com/'><img src='images/barbershop.png'/></a><br/> Perdiste viejito : " + score + " pts</div><br><div style='font-size:24px;' class='centeredHeader unselectable'> Mejores Resultados:</div><table class='tg' style='margin:0px auto'>"
     };
