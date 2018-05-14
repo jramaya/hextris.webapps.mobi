@@ -154,10 +154,10 @@ function toggleClass(element, active)
 function showText(text) 
 {
     var messages = {
-        'paused': "<div class='centeredHeader unselectable'>Pause</div><br><div class='unselectable centeredSubHeader'>Touch <i class='fa fa-play'></i> to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe></div>",
-        'pausedAndroid': "<div class='centeredHeader unselectable'>Pause</div><br><div class='unselectable centeredSubHeader'>Touch <i class='fa fa-play'></i> to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe></div>",
-        'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Touch <i class='fa fa-play'></i> to resume</div>",
-        'gameover': "<div class='centeredHeader unselectable'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe><br/> Game Over : " + score + " pts</div><br><div style='font-size:24px;' class='centeredHeader unselectable'> High Scores:</div><table class='tg' style='margin:0px auto'>"
+        'paused': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe></div>",
+        'pausedAndroid': "<div class='centeredHeader unselectable'>Pausa</div><br><div class='unselectable centeredSubHeader'>Presiona <i class='fa fa-play'></i> para continuar</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe></div>",
+        'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Presiona <i class='fa fa-play'></i> para continuar</div>",
+        'gameover': "<div class='centeredHeader unselectable'><iframe src='//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=b42106a6f5c5d1fc09bab25ec815d98d&t=hextriswebmobi-20&tracking_id=hextriswebmobi-20' width='180' height='150' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe><br/> Perdiste viejito : " + score + " pts</div><br><div style='font-size:24px;' class='centeredHeader unselectable'> Mejores Resultados:</div><table class='tg' style='margin:0px auto'>"
     };
 
     if (text == 'paused') 
@@ -181,9 +181,9 @@ function showText(text)
 
         var restartText;
         if (settings.platform == 'mobile')
-            restartText = 'Touch the screen to start a new game';
+            restartText = 'Toca la pantalla para volver a jugar';
         else
-            restartText = 'Press enter';
+            restartText = 'Presiona enter';
 
 
         messages['gameover'] += "</table><br><div class='unselectable centeredSubHeader' id = 'tapToRestart'>" + restartText + "</div>";

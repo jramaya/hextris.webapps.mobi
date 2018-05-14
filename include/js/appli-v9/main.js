@@ -365,7 +365,7 @@ function facebookShare()
     if (gameState == 1) 
         pause();
 
-        window.open('https://www.facebook.com/sharer/sharer.php?u=https://hextris.webapps.mobi')
+        window.open('https://www.facebook.com/sharer/sharer.php?u=https://sv.hextris.webapps.mobi')
 }
 
 

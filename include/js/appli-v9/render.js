@@ -90,16 +90,16 @@ function render()
 
 function renderBeginningText() 
 {
-	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 208 * settings.scale, 35, '#2c3e50', 'Controls', '35px Roboto');
-	renderText((trueCanvas.width)/2 - 85 * settings.scale, (trueCanvas.height)/2 - 35 - 169 * settings.scale, 20, '#2c3e50', 'Rotation:', '20px Roboto');
-	renderText((trueCanvas.width)/2 - 21 * settings.scale, (trueCanvas.height)/2 - 35 - 141 * settings.scale, 12, '#2c3e50', 'Left', '12px Roboto');
-	renderText((trueCanvas.width)/2 + 25 * settings.scale, (trueCanvas.height)/2 - 35 - 141 * settings.scale, 12, '#2c3e50', 'Right', '12px Roboto');
+	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 208 * settings.scale, 35, '#2c3e50', 'Controles', '35px Roboto');
+	renderText((trueCanvas.width)/2 - 85 * settings.scale, (trueCanvas.height)/2 - 35 - 169 * settings.scale, 20, '#2c3e50', 'Girar:', '20px Roboto');
+	renderText((trueCanvas.width)/2 - 21 * settings.scale, (trueCanvas.height)/2 - 35 - 141 * settings.scale, 12, '#2c3e50', 'Izquierda', '12px Roboto');
+	renderText((trueCanvas.width)/2 + 25 * settings.scale, (trueCanvas.height)/2 - 35 - 141 * settings.scale, 12, '#2c3e50', 'Derecha', '12px Roboto');
 	drawKey("right",(trueCanvas.width)/2 + 23 * settings.scale - 35/2 * settings.scale, (trueCanvas.height)/2 - 35 - 195 * settings.scale);
 	drawKey("left",(trueCanvas.width)/2 - 23 * settings.scale - 35/2 * settings.scale, (trueCanvas.height)/2 - 35 - 195 * settings.scale);
-	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 125 * settings.scale, 20, '#2c3e50', 'Rotate the Hexagon to make combos of 3+ touching blocks!', '20px Roboto');
-	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 105 * settings.scale, 20, '#2c3e50', 'Make combos in a row to receive a score multiplier!', '20px Roboto');
-	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 85 * settings.scale, 20, '#2c3e50', 'Don\'t let the blocks stack outside of the gray Hexagon!', '20px Roboto');
-	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 65 * settings.scale, 20, '#2c3e50', (settings.platform == 'mobile' ? 'Tap the middle to toggle 2x speed!' : 'Hold the down arrow to toggle 2x speed!'), '20px Roboto');
+	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 125 * settings.scale, 20, '#2c3e50', 'Gira el hexagono para hacer combos de tres bloques del mismo color', '20px Roboto');
+	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 105 * settings.scale, 20, '#2c3e50', 'Haz combos de tres para multiplicar tus puntos', '20px Roboto');
+	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 85 * settings.scale, 20, '#2c3e50', 'No dejes que el Hexagono se llene de bloques!!!!', '20px Roboto');
+	renderText((trueCanvas.width)/2 + 1.5 * settings.scale, (trueCanvas.height)/2 - 35 - 65 * settings.scale, 20, '#2c3e50', (settings.platform == 'mobile' ? 'Toca el boton del centro para 2x de velocidad!' : 'Presiona la tecla flecha abajo para 2x de velocidad!'), '20px Roboto');
 }
 
 
