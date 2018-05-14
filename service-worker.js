@@ -8,6 +8,7 @@ var cacheFiles = [
 	'./launcher-icon-1x.png',
 	'./launcher-icon-2x.png',
 	'./launcher-icon-4x.png',
+	'./images/barbershop.png',
 	'./launcher-icon-apple.png',
 	'./include/css/fa/css/font-awesome.css',
 	'./include/css/fa/css/font-awesome.min.css',
