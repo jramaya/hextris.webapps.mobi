@@ -4,6 +4,7 @@
   "description": "An addictive puzzle game inspired by Tetris",
   "display": "standalone",
   "orientation": "portrait",
+  "background_color": "yellow",
   "icons": [
     {
       "src": "launcher-icon-1x.png",
